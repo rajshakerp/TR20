@@ -15,7 +15,7 @@ configuration DomainJoin
     
     $adminlist = $LocalAdmins.split(",")
     
-    Import-DscResource -ModuleName cComputerManagement
+    Import-DscResource -ModuleName xComputerManagement
     Import-DscResource -ModuleName xActiveDirectory
 
     Import-Module ServerManager
@@ -35,7 +35,7 @@ configuration DomainJoin
 
                     Write-EventLog -LogName Application -source AzureArmTemplates -eventID 1000 -entrytype Information -message "Configure for Partners Access" 
                      try{
-                            $fw=New-object –comObject HNetCfg.FwPolicy2
+                            $fw=New-object â€“comObject HNetCfg.FwPolicy2
                          
                             foreach($z in (1..4)) {
                             $CurrentProfiles=$z
