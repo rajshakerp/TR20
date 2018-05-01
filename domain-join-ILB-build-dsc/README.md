@@ -7,5 +7,3 @@ Deployment of multiple VMs that includes ILB and availability group set-up as we
 •	Creates Probe Test
 •	Configures Backed Pool for ILB
 •	Adds Availability Set to backend pool
-
-This is a community submission from the Mercury team.  Please reach out to merceng@microsoft.com for questions\consult.
